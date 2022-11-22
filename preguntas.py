@@ -125,15 +125,15 @@ def pregunta_06():
     ]
 
     """
-    Data_1 = [line.split (",") for line in data]
-    filtered_dict_list = [list(filter(lambda x : len(x) > 2, row)) for row in [row [5:] for row in data_1]]
+    Data_1 = [line.split(",") for line in data]
+    filtered_dict_list = [list(filter(lambda x: len(x)> 2, row)) for row in [row[5:] for row in data_1]]
     data_dict = {}
     
     for row in filtered_dict_list:
         for value in row:
-            data_dict.setdefault(value[:3], []).append (int(value*4:]))
+            data_dict.setdefault(value[:3], []).append(int(value[4:]))
             
-    sorted ([key[0], min(key[1]), max(key[1])) for key in data_dict.items()])
+    sorted([key[0], min(key[1]), max(key[1])) for key in data_dict.items()])
 
 
 def pregunta_07():
